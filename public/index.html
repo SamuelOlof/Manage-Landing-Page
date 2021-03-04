@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Manage landing page</title>
+
+</head>
+<body >
+
+  <section>
+    <nav class="mx-5 my-10 sm:mx-16 sm:flex relative"  >
+      <div class="flex space-x-32">
+        <div>
+          <img src="../images/logo.svg" alt="logo">
+        </div>
+  
+        <div id="hamburger" class="sm:hidden absolute right-8">
+          <img src="../images/icon-hamburger.svg" alt="hamburger" >
+        </div>
+        <div id="closeBtn" class="hidden absolute right-8">
+          <img src="../images/icon-close.svg" alt="close" >
+        </div>
+      </div>
+
+      <div id="nav-links" class="flex-col text-dark-blue hidden sm:flex sm:flex-row absolute sm:right-8 w-3/4 h-80 sm:h-0 sm:w-1/2 bg-gray-100 sm:bg-transparent rounded mx-12 space-y-8 sm:space-y-0 mt-6 sm:mt-0 ">
+        <a class="hover:text-dark-grayish-blue rounded px-4 md:px-2 mx-auto pt-8 sm:pt-0" href="#">Product</a>
+        <a class="hover:text-dark-grayish-blue rounded px-4 md:px-2 mx-auto" href="#">Pricing</a>
+        <a class="hover:text-dark-grayish-blue rounded px-4 md:px-2 mx-auto" href="#">About Us</a>
+        <a class="hover:text-dark-grayish-blue rounded px-4 md:px-2 mx-auto" href="#">Careers</a>
+        <a class="hover:text-dark-grayish-blue rounded px-4 md:px-2 mx-auto" href="#">Community</a>
+      </div>
+    </nav>
+  </section>
+
+  
+
+  <section class="sm:flex flex-row-reverse sm:mx-14">
+    <div class="mr-3 ml-3 ">
+        <img src="../images/illustration-intro.svg" alt="illustration">
+    </div>
+    <div class="sm:w-7/12 sm:mt-8">
+      <div class="mr-3 ml-3 ">
+        <div class="text-4xl sm:text-3xl text-center sm:text-left text-dark-blue font-semibold">Bring everyone together to build better products.</div>
+        <div class="text-center sm:text-left m-4 sm:mt-4 sm:mb-4 sm:ml-0 text-gray-400 ">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</div>
+      </div>
+      <button class="bg-bright-red text-white pl-3 pr-3 pt-2 pb-2 hover:bg-opacity-75 rounded-3xl ml-32 sm:ml-4 hover" type="submit">Get Started</button>
+    </div>
+  </section>
+
+  <section class="mt-24 sm:flex  sm:mx-14">
+    <div class="mr-3 ml-3 sm:mt-14">
+      <div class="text-4xl text-center text-dark-blue font-semibold">What’s different about Manage?</div>
+      <div class="text-center m-4 text-gray-400">Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams. </div>
+    </div>
+
+    
+    <div >
+      <!-- first point -->
+      <div class="mt-14">
+        <div class="bg-very-pale-red text-dark-blue pt-3 pb-3 rounded-2xl text-lg font-semibold ml-4"><span class="text-white bg-bright-red pt-3 pb-3 pl-5 pr-5 rounded-2xl mr-1">01</span> Track company-wide progress</div>
+
+        <div class="mt-3 ml-5 mr-1 text-gray-400 text-left">See how your day-to-day tasks fit   into  the wider vision. Go from tracking progress at the milestone level all the way done to the 
+        smallest of details. Never lose sight of the bigger picture again.</div>
+      </div>
+
+      <!-- second point -->
+      <div class="mt-14">
+        <div class="bg-very-pale-red text-dark-blue pt-3 pb-3 rounded-2xl text-lg font-semibold ml-4"><span class="text-white bg-bright-red pt-3 pb-3 pl-5 pr-5 rounded-2xl mr-1">02</span> Advanced built-in reports</div>
+
+        <div class="mt-3 ml-5 mr-1 text-gray-400 text-left">Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</div>
+      </div>
+      
+      <!-- third point -->
+      <div class="mt-14">
+        <div class="bg-very-pale-red text-dark-blue pt-3 pb-3 rounded-2xl text-lg font-semibold ml-4"><span class="text-white bg-bright-red pt-3 pb-3 pl-5 pr-5 rounded-2xl mr-1">03</span> Everything you need in one place</div>
+
+        <div class="mt-3 ml-5 text-gray-400 text-left"> Stop jumping from one service to another to communicate, store files,track tasks and share documents. Manage offers an all-in-one team productivity solution.</div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- testimonial -->
+  <section class="mt-14">
+      <div class="text-dark-blue text-4xl text-center font-semibold">What they’ve said</div>
+
+      <div class="mt-10 sm:w-80 sm:mx-auto">
+        <img class="mx-auto h-20 w-20" src="../images/avatar-anisha.png" alt="avata anisha" >
+
+        <div class="text-center font-lg font-semibold text-xl mt-5 text-dark-blue">Anisha Li</div>
+        
+        <div class="mt-3 ml-5 mr-5 text-gray-400 text-center">
+          <q>
+            Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.
+          </q>
+        </div>
+
+        <button class="bg-bright-red text-white pl-3 pr-3 pt-2 pb-2 hover:bg-opacity-75 rounded-3xl ml-32 sm:mx-24 mt-14 hover" type="submit">Get Started</button>
+      </div>
+  </section>
+
+  <section class="bg-bright-red h-96 sm:h-40 mt-6 pt-16 sm:flex">
+    <div class="text-white text-5xl sm:text-4xl sm:w-6/12 font-semibold text-center sm:text-left ml-1 mr-1 sm:ml-14">
+      Simplify how your team works today.
+    </div>
+
+    <button class="bg-white text-bright-red pl-3 pr-3 pt-2 pb-2 hover:bg-opacity-75 rounded-3xl ml-32 mt-14 sm:ml-32 sm:mt-4 hover sm:h-12" type="submit">Get Started</button>
+  </section>
+
+  <!-- footer -->
+  <section class="bg-very-dark-blue sm:flex flex-row-reverse pb-8">
+    <div class="text-center pt-0.5 sm:flex sm:mr-14">
+      <input class="rounded-3xl pl-3 pr-3 pt-2 pb-2 w-56 sm:h-12 sm:mt-14" type="text" placeholder="Updates in your inbox...">
+      <button class="bg-bright-red text-white pl-3 pr-3 pt-2 pb-2 hover:bg-opacity-75 rounded-3xl ml-2 mt-14 hover w-20 sm:h-12" type="submit">Go</button>
+    </div>
+
+    <div class="flex mt-8 items-center justify-center w-full text-white">
+      <div class="mr-12 sm:mr-6 " >
+        <a class="block hover:text-bright-red" href="#">Home</a>
+        <a class="block hover:text-bright-red" href="#">Pricing</a>
+        <a class="block hover:text-bright-red" href="#">Product</a>
+        <a class="block hover:text-bright-red" href="#">About Us</a>
+      </div>
+
+      <div class="ml-12 sm:ml-6 sm:mr-2">
+        <a class="block hover:text-bright-red" href="#">Careers</a>
+        <a class="block hover:text-bright-red" href="#">Community</a>
+        <a class="block hover:text-bright-red" href="#">Privacy Policy</a>
+      </div>
+    </div>
+
+    <div class="sm:flex flex-col-reverse sm:ml-14">
+      <div class="flex mt-8 ">
+        <a class="ml-10 sm:ml-2 w-8 h-8 hover:bright-red" href="http://facebook.com" target="blank"><img src="../images/icon-facebook.svg"></a>
+        <a class="ml-10 sm:ml-2 w-8 h-8 hover:bright-red" href="http://youtube.com" target="blank"><img src="../images/icon-youtube.svg"></a>
+        <a class="ml-10 sm:ml-2 w-8 h-8 hover:bright-red" href="http://facebook.com" target="blank"><img src="../images/icon-twitter.svg"></a>
+        <a class="ml-10 sm:ml-2 w-8 h-8 hover:bright-red" href="http://facebook.com" target="blank"><img src="../images/icon-pinterest.svg"></a>
+        <a class="ml-10 sm:ml-2 w-8 h-8 hover:bright-red" href="http://facebook.com" target="blank"><img src="../images/icon-instagram.svg"></a>
+      </div>
+
+      <div class="mt-8">
+        <a  href="#"><img class="mx-auto" src="../images/logo.svg" alt="" srcset=""></a>
+      </div>
+    </div>
+
+  
+
+  </section>
+
+  <div class="bg-very-dark-blue">
+    <div class="text-xs text-center text-gray-500">
+      Copyright 2020. All Rights Reserved
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Samuel Olofintoye</a>.
+    </div>>
+  </div>
+  
+  <!-- Pricing
+  Product
+  About Us
+  Careers
+  Community -->
+
+
+  <!-- Ali Bravo
+  “We have been able to cancel so many other subscriptions since using 
+  Manage. There is no more cross-channel confusion and everyone is much 
+  more focused.”
+
+  Richard Watts
+  “Manage allows us to provide structure and process. It keeps us organized 
+  and focused. I can’t stop recommending them to everyone I talk to!”
+
+  Shanai Gough
+  “Their software allows us to track, manage and collaborate on our projects 
+  from anywhere. It keeps the whole team in-sync without being intrusive.” -->
+  
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
