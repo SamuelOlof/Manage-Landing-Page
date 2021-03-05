@@ -6,6 +6,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
   <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Manage landing page</title>
@@ -87,21 +89,56 @@
   </section>
 
   <!-- testimonial -->
-  <section class="mt-14">
-      <div class="text-dark-blue text-4xl text-center font-semibold">What they’ve said</div>
+  <section class="mt-14 ">
+      <div class="text-dark-blue text-4xl text-center font-semibold">
+        What they’ve said
+      </div>
 
-      <div class="mt-10 sm:w-80 sm:mx-auto">
-        <img class="mx-auto h-20 w-20" src="../images/avatar-anisha.png" alt="avata anisha" >
+      <div class="mt-10  sm:mx-auto container">
+        <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true }'>
+          <div class="carousel-cell">
+            <img class="mx-auto h-20 w-20" src="../images/avatar-anisha.png" alt="avata anisha" >
 
-        <div class="text-center font-lg font-semibold text-xl mt-5 text-dark-blue">Anisha Li</div>
-        
-        <div class="mt-3 ml-5 mr-5 text-gray-400 text-center">
-          <q>
-            Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.
-          </q>
+            <div class="text-center font-lg font-semibold text-xl mt-5 text-dark-blue">Anisha Li</div>
+          
+            <div class="mt-3 ml-5 mr-5  text-gray-400 text-center">
+              <q>
+                Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.
+              </q>
+            </div>
+          </div>
+
+          <div class="carousel-cell">
+            <img class="mx-auto h-20 w-20" src="../images/avatar-ali.png" alt="avata Ali" >
+
+            <div class="text-center font-lg font-semibold text-xl mt-5 text-dark-blue">Ali bravo</div>
+          
+            <div class="mt-3 ml-5 mr-5 text-gray-400 text-center">
+              <q>
+                We have been able to cancel so many other subscriptions since using
+                Manage. There is no more cross-channel confusion and everyone is much
+                more focused.
+              </q>
+            </div>
+          </div>
+
+          <div class="carousel-cell">
+            <img class="mx-auto h-20 w-20" src="../images/avatar-richard.png" alt="avata richard" >
+
+            <div class="text-center font-lg font-semibold text-xl mt-5 text-dark-blue">Richard Watts</div>
+          
+            <div class="mt-3 ml-5 mr-5 text-gray-400 text-center">
+              <q>
+                Manage allows us to provide structure and process. It keeps us organized
+                and focused. I can’t stop recommending them to everyone I talk to!
+              </q>
+            </div>
+          </div>
         </div>
-
-        <button class="bg-bright-red text-white pl-3 pr-3 pt-2 pb-2 hover:bg-opacity-75 rounded-3xl ml-32 sm:mx-24 mt-14 hover" type="submit">Get Started</button>
+        <div class="flex justify-center">
+          <button class="bg-bright-red text-white px-3 py-2 hover:bg-opacity-75 rounded-3xl mt-14 hover " type="submit">Get Started</button>
+        </div>
+       
       </div>
   </section>
 
@@ -116,8 +153,10 @@
   <!-- footer -->
   <section class="bg-very-dark-blue sm:flex flex-row-reverse pb-8">
     <div class="text-center pt-0.5 sm:flex sm:mr-14">
-      <input class="rounded-3xl pl-3 pr-3 pt-2 pb-2 w-56 sm:h-12 sm:mt-14" type="text" placeholder="Updates in your inbox...">
-      <button class="bg-bright-red text-white pl-3 pr-3 pt-2 pb-2 hover:bg-opacity-75 rounded-3xl ml-2 mt-14 hover w-20 sm:h-12" type="submit">Go</button>
+
+      <input id="mail" class="rounded-3xl pl-3 pr-3 pt-2 pb-2 w-56 sm:h-12 sm:mt-14" type="text" placeholder="Updates in your inbox...">
+      <button id="mailBtn" class="bg-bright-red text-white pl-3 pr-3 pt-2 pb-2 hover:bg-opacity-75 rounded-3xl ml-2 mt-14 hover w-20 sm:h-12" type="submit">Go</button>
+      <p id="mailError" class="text-bright-red"></p>
     </div>
 
     <div class="flex mt-8 items-center justify-center w-full text-white">
@@ -160,6 +199,7 @@
   </div>  
   
 
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

@@ -1,6 +1,9 @@
 const hamburger = document.querySelector('#hamburger');
 const nav =  document.querySelector('#nav-links');
 const closeBtn = document.querySelector('#closeBtn');
+const mail = document.querySelector('#mail');
+const mailBtn = document.querySelector('#mailBtn');
+const mailError = document.querySelector('#mailError');
 
 function navList(){
     if(nav.classList.contains('hidden') && closeBtn.classList.contains('hidden')){
@@ -19,6 +22,22 @@ function navList(){
 
     }
 }
+
+function ValidateEmail(){
+    var mailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/ ;
+    if (mail.value.match(mailFormat)){
+       mailError.innerHTML = '';
+        return (true)
+   } else{
+       mailError.innerHTML = 'Looks like this is not an Email';
+        return (false)
+   }
+   
+}
+
+mailBtn.addEventListener('click', () => {
+   ValidateEmail();
+})
 
 hamburger.addEventListener('click', ()  => {
     navList();

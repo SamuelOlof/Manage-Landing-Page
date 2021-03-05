@@ -32231,6 +32231,21 @@ video {
           animation: bounce 1s infinite;
 }
 
+.carousel-cell {
+  width: 66%;
+  height: 300px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  height: 50px;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
